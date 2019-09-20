@@ -12,7 +12,7 @@
 
 
 def cmp_dict(src_data, dst_data, path='', diff=dict()):
-    assert type(src_data) == type(dst_data), "type: '{}' != '{}'".format(type(src_data), type(dst_data))
+    # assert type(src_data) == type(dst_data), "type: '{}' != '{}'".format(type(src_data), type(dst_data))
     if isinstance(src_data, dict):
         for key in src_data:
             newpath = path + '.' + key

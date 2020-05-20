@@ -27,7 +27,10 @@ def cmp_dict(src_data, dst_data, path='', diff=dict(), sort=False):
     elif isinstance(src_data, list):
         if len(src_data) == len(dst_data):
             if sort:
-                tmp = zip(sorted(src_data), sorted(dst_data))
+               try:
+                    tmp = zip(sorted(src_data), sorted(dst_data))
+                except Exception:
+                    tmp = zip(src_data, dst_data)
             else:
                 tmp = zip(src_data, dst_data)
             for k, v in enumerate(tmp):

@@ -17,15 +17,15 @@ from version import __VERSION__
 
 def _setup():
     setuptools.setup(
-        name='cmp_dict',
+        name='dict_diff',
         version=__VERSION__,
         description='diff dict',
         author='Xiangguo Meng',
         author_email='mxgnene01@gmail.com',
         install_requires=[],
-        py_modules=['cmp_dict'],
+        py_modules=['dict_diff'],
         license='MIT',
-        url='https://github.com/mxgnene01/cmp_dict',
+        url='https://github.com/mxgnene01/dict_diff',
         include_package_data=True,
         long_description=open('README.md').read(),
         entry_points={}
